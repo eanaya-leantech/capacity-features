@@ -3,8 +3,10 @@ require('dotenv').config({
 })
 
 const contentfulConfig = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  // spaceId: process.env.CONTENTFUL_SPACE_ID,
+  // accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  spaceId: 'f7k2uuowyxcu',
+  accessToken: '8lVspGgOTlHIhK03XNy35weTd3s96RzMcD5jyDThdIw',
 }
 
 // if you want to use the preview API please define
@@ -13,6 +15,8 @@ const contentfulConfig = {
 // https://www.contentful.com/developers/docs/references/content-preview-api/#/reference/spaces/space/get-a-space/console/js
 if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST
+}else{
+  contentfulConfig.host = 'preview.contentful.com'
 }
 
 const { spaceId, accessToken } = contentfulConfig
