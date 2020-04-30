@@ -1,0 +1,10 @@
+.footer{
+    width: 100%;
+    background-color: #111419;
+}
+
+.particles {
+    /* position: absolute; */
+    height: 40% !important;
+    max-height: 300px !important;
+}

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
+import About from '../components/about'
+import Footer from '../components/footer'
+import Hotoffer from '../components/hotoffer'
 import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
+
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -17,8 +21,11 @@ class RootIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
+          <About />
+          <Hotoffer />
           <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
+            <h2 className="section-headline">Latest news</h2>
+            <p style={{fontSize: 22, textAlign: 'center', paddingBottom: 20}}>Keep updated with what is new in Capacity and the logistics world</p>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
@@ -29,6 +36,7 @@ class RootIndex extends React.Component {
               })}
             </ul>
           </div>
+          <Footer />
         </div>
       </Layout>
     )
