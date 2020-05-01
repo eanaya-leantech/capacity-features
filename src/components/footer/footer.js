@@ -29,5 +29,9 @@ export default ({ data }) => (
           <img className={styles.imgFooter} src={require('../../animation/footerlogos.png')} draggable={false}/>
         </div>
       </div>
+      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: 15}}>
+        <p style={{color: 'white'}}>© 2020 Capacity from Edge Logistics v.1.0.0</p>
+        <p style={{color: 'white'}}>Chicago | Detroit | Los Angeles | New York</p>
+      </div>
   </div>
 )

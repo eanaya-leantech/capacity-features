@@ -35,7 +35,7 @@ const navigation = () => {
             <a className={scrollPosition === 0 ? styles.linkTryDemo : styles.linkTryDemoStiky} href="http://capacity.edgelogistics.com/">LOGIN</a>
           </li>
           <li className={styles.navigationItem}>
-            <a className={scrollPosition === 0 ? styles.linkSignUp : styles.linkSignUpStiky} href="http://capacity.edgelogistics.com/">TRY DEMO</a>
+            <a className={scrollPosition === 0 ? styles.linkSignUp : styles.linkSignUpStiky} href="http://capacity.edgelogistics.com/">SIGN UP</a>
           </li>
         </div>
       </ul>

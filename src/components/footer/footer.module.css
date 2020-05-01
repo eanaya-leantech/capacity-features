@@ -3,6 +3,8 @@
     background-color: #111419;
     height: 300px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .particles {
