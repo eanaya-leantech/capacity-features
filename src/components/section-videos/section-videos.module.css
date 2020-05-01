@@ -1,0 +1,27 @@
+.section{
+    width: 100%;
+    background-color: #111419;
+    height: 600px;
+    display: flex;
+}
+
+.particless {
+    position: absolute;
+    height: 80% !important;
+    max-height: 600px !important;
+}
+
+@media(min-width: 640px) {
+    .section{
+        width: 100%;
+        background-color: #111419;
+        height: 700px;
+        display: flex;
+    }
+    
+    .particless {
+        position: absolute;
+        height: 80% !important;
+        max-height: 700px !important;
+    }
+}

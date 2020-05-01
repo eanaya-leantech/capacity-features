@@ -4,10 +4,11 @@ import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
-import About from '../components/about'
-import Footer from '../components/footer'
-import Hotoffer from '../components/hotoffer'
+import About from '../components/about/about'
+import Footer from '../components/footer/footer'
+import Hotoffer from '../components/hot-offer/hot-offer'
 import ArticlePreview from '../components/article-preview'
+import SectionVideos from '../components/section-videos/section-videos'
 
 class RootIndex extends React.Component {
 
@@ -23,6 +24,7 @@ class RootIndex extends React.Component {
           <Hero data={author.node} />
           <About />
           <Hotoffer />
+          <SectionVideos />
           <div className="wrapper">
             <h2 className="section-headline">Latest news</h2>
             <p style={{fontSize: 22, textAlign: 'center', paddingBottom: 20}}>Keep updated with what is new in Capacity and the logistics world</p>

@@ -6,6 +6,15 @@
   font-display: swap;
 }
 
+.rec-dot_active{
+  background-color: white !important;
+  box-shadow: 0 0 1px 3px #FFFFFF !important;
+}
+
+.rec-dot{
+  box-shadow: 0 0 1px 2px #CECECE !important;
+}
+
 body {
   font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1em;

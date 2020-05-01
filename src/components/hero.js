@@ -29,8 +29,8 @@ export default ({ data }) => (
           }}
         />
 
-        <Link className={styles.linkTryDemo} to="/">LOGIN</Link>
-        <Link className={styles.linkSignUp} to="/">TRY DEMO</Link>
+        <a className={styles.linkTryDemo} href="http://capacity.edgelogistics.com/">LOGIN</a>
+        <a className={styles.linkSignUp} href="http://capacity.edgelogistics.com/">TRY DEMO</a>
         <img src={require('../animation/iphone.png')} className={styles.heroImage} draggable={false}/>
 
       </div>

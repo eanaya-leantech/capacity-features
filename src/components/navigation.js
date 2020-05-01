@@ -27,15 +27,15 @@ const navigation = () => {
             <img src={require('./../animation/logo.svg')} className={scrollPosition === 0 ? styles.imageLogo : styles.imageLogoStiky} draggable="false" width="320px" height="auto"/>
           </li>
           <li className={styles.navigationItem}>
-            <Link className={scrollPosition === 0 ? styles.linkSite : styles.linkSiteStiky} to="/">Our Website</Link>
+            <a className={scrollPosition === 0 ? styles.linkSite : styles.linkSiteStiky} href="https://edgelogistics.com/">Our Website</a>
           </li>
         </div>
         <div className={styles.navBtn}>
         <li className={styles.navigationItem}>
-            <Link className={scrollPosition === 0 ? styles.linkTryDemo : styles.linkTryDemoStiky} to="/">LOGIN</Link>
+            <a className={scrollPosition === 0 ? styles.linkTryDemo : styles.linkTryDemoStiky} href="http://capacity.edgelogistics.com/">LOGIN</a>
           </li>
           <li className={styles.navigationItem}>
-            <Link className={scrollPosition === 0 ? styles.linkSignUp : styles.linkSignUpStiky} to="/blog/">TRY DEMO</Link>
+            <a className={scrollPosition === 0 ? styles.linkSignUp : styles.linkSignUpStiky} href="http://capacity.edgelogistics.com/">TRY DEMO</a>
           </li>
         </div>
       </ul>
