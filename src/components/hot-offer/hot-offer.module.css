@@ -34,8 +34,12 @@
     display: none;
 }
 
+.scroll{
+    overflow-y: hidden;
+}
     /* width */
     .scroll ::-webkit-scrollbar {
+    
     width: 7px;
     border-radius: 6px;
   }

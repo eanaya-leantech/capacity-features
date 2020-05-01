@@ -13,7 +13,7 @@ export default ({ data }) => (
       <img src={require('../../animation/fire.svg')} className={styles.imageFire} draggable={false}/>
       <p className={styles.now} style={{color: 'white', fontSize: 18, fontWeight: '500'}}>HOT NOW! </p>
     </div>
-    <div className={styles.scroll} style={{display: 'flex',  alignItems: 'center', flex: 1, paddingLeft: 20, paddingRight: 20, height: '100%', overflowY: 'scroll', overflowX: 'hidden', whiteSpace: 'nowrap'}}>
+    <div  style={{display: 'flex',  alignItems: 'center', flex: 1, paddingLeft: 20, paddingRight: 20, height: '100%', whiteSpace: 'nowrap'}} className={styles.scroll}>
       
       <div style={{display: 'flex', flexDirection: 'row', height: '100%', justifyContent: 'center', alignItems: 'center', marginRight: 25}}>
         <div style={{ display: 'flex', flexDirection: 'column'}}>
