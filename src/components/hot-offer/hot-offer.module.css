@@ -38,26 +38,26 @@
     overflow-y: hidden;
 }
     /* width */
-    .scroll ::-webkit-scrollbar {
+::-webkit-scrollbar {
     
     width: 7px;
     border-radius: 6px;
   }
   
   /* Track */
-  .scroll ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #F2F2F2; 
     border-radius: 6px;
   }
    
   /* Handle */
-  .scroll ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 6px;
   }
   
   /* Handle on hover */
-  .scroll ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
     border-radius: 6px;
   }
