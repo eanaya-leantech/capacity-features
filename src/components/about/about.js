@@ -12,8 +12,8 @@ export default ({ data }) => (
   <div className={styles.about}>
       <div className={styles.aboutContainer}>
         <h2>{data ? data.title : '- -'}</h2>
-            <div>{data ? <p>{data.description}</p> : <p>subio
-            </p>}</div>
+            <div>{ data ? <p>{data.description.description}</p> : <p> demo
+            </p> } </div>
       </div>
 
       <div className={styles.containerCards} style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginTop: 20, flexWrap: 'wrap'}}>

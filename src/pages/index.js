@@ -98,13 +98,13 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulAbout(
-      filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
-    ) {
+    allContentfulAbout{
       edges {
         node {
           title
-          description
+          description{
+            description
+          }
         }
       }
     }
