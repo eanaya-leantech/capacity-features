@@ -16,13 +16,14 @@ class RootIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
+    const [about] = get(this, 'props.data.allContentfulAbout.edges')
 
     return (
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
-          <About />
+          <About data={about.node} />
           <Hotoffer />
           <SectionVideos />
           <div className="wrapper">
@@ -94,6 +95,16 @@ export const pageQuery = graphql`
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
+        }
+      }
+    }
+    allContentfulAbout(
+      filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
+    ) {
+      edges {
+        node {
+          title
+          description
         }
       }
     }
