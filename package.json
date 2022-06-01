@@ -21,7 +21,7 @@
     "react-elastic-carousel": "^0.4.1",
     "react-helmet": "^6.0.0",
     "react-particles-js": "2.7.1",
-    "sharp": "^0.25.2",
+    "sharp": "^0.30.5",
     "styled-components": "^5.1.0",
     "typewriter-effect": "^2.13.0"
   },
